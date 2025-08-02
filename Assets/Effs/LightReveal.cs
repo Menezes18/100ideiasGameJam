@@ -3,10 +3,9 @@ using UnityEngine;
 public class LightReveal : MonoBehaviour
 {
     public float maxDistance = 20f;
-    string colorProperty = "Color_70EBBDEE";  
-    string erodeProperty = "_Erode";
-
     public LayerMask layerMask;
+
+    private string colorProperty = "_Color"; // <- 
     private Light spotlight;
 
     void Start()
@@ -24,35 +23,23 @@ public class LightReveal : MonoBehaviour
 
         foreach (RaycastHit hit in hits)
         {
-            Renderer renderer = hit.collider.GetComponent<Renderer>();
+            GameObject hitObject = hit.collider.gameObject;
+
+            // Só altera se estiver na mesma layer da lanterna
+            if (hitObject.layer != gameObject.layer)
+                continue;
+
+            Renderer renderer = hitObject.GetComponent<Renderer>();
             if (renderer == null)
                 continue;
 
             Material mat = renderer.material;
-            
 
-            bool hasColor = mat.HasProperty(colorProperty);
-            bool hasErode = mat.HasProperty(erodeProperty);
-
-            Debug.Log($"Objeto: {hit.collider.name}, Tem Cor? {hasColor}, Tem Erode? {hasErode}");
-
-            if (hasColor)
+            if (mat.HasProperty(colorProperty))
             {
-                Color objectColor = mat.GetColor(colorProperty);
-                Color lightColor = spotlight.color;
-
-                if (ColorsAreSimilar(objectColor, lightColor))
-                {
-                    mat.SetFloat(erodeProperty, 0f); 
-                }
+                mat.SetColor(colorProperty, spotlight.color);
+                Debug.Log($"Cor de '{hitObject.name}' alterada para {spotlight.color}");
             }
         }
-    }
-
-    bool ColorsAreSimilar(Color a, Color b, float tolerance = 0.05f)
-    {
-        return Mathf.Abs(a.r - b.r) < tolerance &&
-               Mathf.Abs(a.g - b.g) < tolerance &&
-               Mathf.Abs(a.b - b.b) < tolerance;
     }
 }
