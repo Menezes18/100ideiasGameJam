@@ -13,6 +13,12 @@ TagManager:
   - Object
   - Semente
   - Terra
+  - Quebra1
+  - Quebra2
+  - Quebra3
+  - Quebra4
+  - Quebra5
+  - Quebra6
   layers:
   - Default
   - TransparentFX
