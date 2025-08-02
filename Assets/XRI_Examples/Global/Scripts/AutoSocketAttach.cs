@@ -28,9 +28,6 @@ namespace UnityEngine.XR.Content.Interaction
                 Debug.Log("AutoSocketAttach does not have a starting selected interactable to match its position.", this);
                 return;
             }
-
-            var targetTransform = m_ControllingInteractor.startingSelectedInteractable.GetAttachTransform(m_ControllingInteractor);
-            transform.SetPositionAndRotation(targetTransform.position, targetTransform.rotation);
         }
     }
 }
