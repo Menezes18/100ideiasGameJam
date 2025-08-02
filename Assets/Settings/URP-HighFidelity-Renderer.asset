@@ -109,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3e9fd49f63aed40aa6ca836e976bf2, type: 3}
   m_Name: CustomRenderPassFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     material: {fileID: 2100000, guid: adabb392f039a83498557716dc5c32b4, type: 2}

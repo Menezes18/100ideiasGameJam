@@ -29,6 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Enabled: 1
     - _GrayscaleIntensity: 1
     - _LightInfluence: 1
     - _LightIntensity: 1

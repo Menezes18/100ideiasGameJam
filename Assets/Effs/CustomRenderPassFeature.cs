@@ -68,22 +68,12 @@ public class CustomRenderPassFeature : ScriptableRendererFeature
     {
         renderer.EnqueuePass(m_ScriptablePass);
     }
-    
-    // Método para atualizar o material do passe de renderização
+
     public void UpdateMaterial(Material newMaterial)
     {
         if (m_ScriptablePass != null)
         {
             m_ScriptablePass.SetMaterial(newMaterial);
-        }
-    }
-    
-    // Método público para habilitar/desabilitar o efeito de escala de cinza
-    public void SetGrayscaleEnabled(bool enabled)
-    {
-        if (settings.material != null)
-        {
-            settings.material.SetFloat("_Enabled", enabled ? 1.0f : 0.0f);
         }
     }
 }
