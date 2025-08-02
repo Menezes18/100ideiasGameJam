@@ -28,7 +28,7 @@ public class SocketStateMethods : MonoBehaviour
     }
     void OnSocketConnected(GameObject obj)
     {
-        animator.SetTrigger("Open");
+        if(animator != null) animator.SetTrigger("Open");
         onConnected?.Invoke();
         Debug.Log($"🔌 Conectado: {obj.name}");
     }
@@ -36,7 +36,7 @@ public class SocketStateMethods : MonoBehaviour
   
     void OnSocketDisconnected()
     {
-        animator.SetTrigger("Close");
+        if(animator != null) animator.SetTrigger("Close");
         onDisconnected?.Invoke();
         Debug.Log("⚠️ Desconectado: socket ficou vazio");
     }
