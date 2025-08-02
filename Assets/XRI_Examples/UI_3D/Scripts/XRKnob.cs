@@ -148,7 +148,6 @@ namespace UnityEngine.XR.Content.Interaction
         public const float threshold = 0.9f;
         private void Update()
         {
-            Debug.LogError(m_Value.ToString() + " valor: " + gameObject.name);
             if (m_Value > threshold && !m_HasFiredAboveThreshold)
             {
                 Debug.LogError("AAA");
