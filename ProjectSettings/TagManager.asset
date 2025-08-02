@@ -11,6 +11,8 @@ TagManager:
   - Interactable
   - Teste
   - Object
+  - Semente
+  - Terra
   layers:
   - Default
   - TransparentFX

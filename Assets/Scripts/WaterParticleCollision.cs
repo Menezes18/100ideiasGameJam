@@ -4,8 +4,8 @@ public class WaterParticleCollision : MonoBehaviour
 {
     public ParticleSystem waterPS;
 
-    public float growthIncrement = 0.1f;
-
+    public Growth _growth;
+        
     void Start()
     {
         var col = waterPS.collision;
@@ -15,7 +15,10 @@ public class WaterParticleCollision : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-        Debug.Log("Player collision " + other.tag);
+        if (other.tag == "Semente"){
+            _growth.isGrowing = true;
+            Debug.Log(other.name);
+        }
         // if (other.CompareTag("Teste")){
         //     Debug.Log("Player collision");
         // }
