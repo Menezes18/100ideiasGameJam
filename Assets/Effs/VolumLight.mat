@@ -52,7 +52,7 @@ Material:
     - _Clip: -0.04
     - _Cull: 2
     - _DstBlend: 10
-    - _Opacity: 0.1
+    - _Opacity: 0.75
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 0
@@ -63,7 +63,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 38.93715, g: 0, b: 0, a: 1}
+    - _Color: {r: 51.984146, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4843178152530805838
 MonoBehaviour:
