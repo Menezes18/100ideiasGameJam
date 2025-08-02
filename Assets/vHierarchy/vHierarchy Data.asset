@@ -285,7 +285,10 @@ MonoBehaviour:
         keys:
         - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-5319416733696767898-0
         - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-7307938702790325844-0
+        - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-10378670547525620461-1823661050
         values:
+        - colorIndex: 7
+          iconNameOrGuid: 
         - colorIndex: 7
           iconNameOrGuid: 
         - colorIndex: 7

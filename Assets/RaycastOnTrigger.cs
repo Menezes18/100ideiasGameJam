@@ -22,33 +22,28 @@ public class ContinuousRaycastWithGizmo : MonoBehaviour
     void Awake()
     {
         actionController = GetComponent<ActionBasedController>();
-        // certifica-se de que a ação de activate está habilitada
         actionController.activateAction.action.Enable();
     }
 
     void Update()
     {
-        // escolhe origem e direção do raio
-        Vector3 origin    = rayOrigin != null ? rayOrigin.position : transform.position;
+        Vector3 origin = rayOrigin != null ? rayOrigin.position : transform.position;
         Vector3 direction = rayOrigin != null ? rayOrigin.forward  : transform.forward;
 
-        // dispara o raycast a cada frame
         if (Physics.Raycast(origin, direction, out RaycastHit hit, rayDistance))
         {
             if (actionController.activateAction.action.triggered)
             {
                 GameObject go = hit.collider.gameObject;
 
-                if (go.layer == LayerMask.NameToLayer(layerName))
-                    Debug.Log($"[Raycast Update] Hit na layer “{layerName}”: {go.name}");
-
                 if (go.CompareTag(targetTag))
-                    Debug.Log($"[Raycast Update] Hit na tag “{targetTag}”: {go.name}");
+                {
+                    hit.collider.GetComponent<InteractableObject>()?.Interactable();
+                }
             }
         }
     }
 
-    // desenha o gizmo no editor
     void OnDrawGizmosSelected()
     {
         Vector3 origin = rayOrigin != null ? rayOrigin.position : transform.position;
