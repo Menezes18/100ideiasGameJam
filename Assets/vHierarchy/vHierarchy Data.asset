@@ -286,10 +286,19 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-5319416733696767898-0
         - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-7307938702790325844-0
         - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-10378670547525620461-1823661050
+        - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-1235840063-0
+        - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-1114603424-0
+        - globalObjectIdString: GlobalObjectId_V1-2-eccb2bc76074b2849b626b75e749890d-7312870038256885875-328385336
         values:
         - colorIndex: 7
           iconNameOrGuid: 
         - colorIndex: 7
           iconNameOrGuid: 
         - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 8
+          iconNameOrGuid: 
+        - colorIndex: 5
+          iconNameOrGuid: 
+        - colorIndex: 5
           iconNameOrGuid: 

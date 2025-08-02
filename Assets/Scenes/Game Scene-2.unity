@@ -3187,17 +3187,17 @@ PrefabInstance:
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0649
+      value: -0.073
       objectReference: {fileID: 0}
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17981136
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.091
+      value: 0.031
       objectReference: {fileID: 0}
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
@@ -6775,17 +6775,17 @@ PrefabInstance:
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.06897394
+      value: -0.067
       objectReference: {fileID: 0}
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17981136
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15714213
+      value: -0.202
       objectReference: {fileID: 0}
     - target: {fileID: 5572517086321491450, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
@@ -19231,7 +19231,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryButton: {fileID: 3910082720624751266, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  handActivated: 0
+  paintScript: {fileID: 0}
+  colors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0, b: 1, a: 1}
 --- !u!114 &6662637720203028096
 MonoBehaviour:
   m_ObjectHideFlags: 0
