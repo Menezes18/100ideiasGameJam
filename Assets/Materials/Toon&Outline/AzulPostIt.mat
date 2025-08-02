@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Amarelo
+  m_Name: AzulPostIt
   m_Shader: {fileID: 4800000, guid: e532e3c26ebdef54298d214a4378f743, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -42,5 +42,5 @@ Material:
     - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.8090522, b: 0.33490568, a: 1}
+    - _Color: {r: 0, g: 0.50179243, b: 1, a: 1}
   m_BuildTextureStacks: []

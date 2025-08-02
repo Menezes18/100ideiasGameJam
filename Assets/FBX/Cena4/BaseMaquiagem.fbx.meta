@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 244a216e0001d0b4b892a57d17fce96d
+guid: 19ef2e648a0119c429c8e2e8323042e4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,18 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Moldura
-    second: {fileID: 2100000, guid: a57adf64a7e455642999675edb5b2b2e, type: 2}
+      name: CorpoCreme
+    second: {fileID: 2100000, guid: a2dd31614c1b254498ad386631d0ab11, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: PecasAzuis
-    second: {fileID: 2100000, guid: 6b48d1dc7258ab243b6d2bc0a4f72702, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PecasLaranja
-    second: {fileID: 2100000, guid: 2b27d0ed74c33b241b3b3ef5379ae3ed, type: 2}
+      name: TampaBase
+    second: {fileID: 2100000, guid: 7c1483096b89c6d42a3533a41bbc9313, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
