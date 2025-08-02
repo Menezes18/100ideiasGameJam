@@ -9,6 +9,8 @@ TagManager:
   - Water
   - Destroyer
   - Interactable
+  - Teste
+  - Object
   layers:
   - Default
   - TransparentFX
