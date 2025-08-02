@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1664797355850113206}
   - component: {fileID: 6198743585047626345}
   - component: {fileID: 235830185138300803}
+  - component: {fileID: 5338807517086071289}
   m_Layer: 6
   m_Name: SpotLight
   m_TagString: Untagged
@@ -118,6 +119,22 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &5338807517086071289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2662480211257029281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35903374dfa622d48b261d9234a10111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 40
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &3604348838257384952
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +147,6 @@ GameObject:
   - component: {fileID: 3567321296760353668}
   - component: {fileID: 1571398487627309811}
   - component: {fileID: 8322467335040516106}
-  - component: {fileID: 548212227031307559}
   m_Layer: 0
   m_Name: SpotLightMESH
   m_TagString: Untagged
@@ -146,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3604348838257384952}
   serializedVersion: 2
-  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0.0000013411044}
+  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 1.641, y: 0.49999332, z: 0.1}
   m_LocalScale: {x: 310, y: 310, z: 310}
   m_ConstrainProportionsScale: 0
@@ -226,19 +242,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3613567641014311022, guid: 3ab4bee5699e32346903c07f7040a50d, type: 3}
---- !u!114 &548212227031307559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604348838257384952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35903374dfa622d48b261d9234a10111, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 20
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
