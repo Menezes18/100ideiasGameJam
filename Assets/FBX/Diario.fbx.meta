@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Diario
-    second: {fileID: 2100000, guid: 638896065ce17fa4fbdde3ec457eff51, type: 2}
+    second: {fileID: 2100000, guid: b605f4821ae95bf4594a0bf9cd0e2e21, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
